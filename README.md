@@ -1,7 +1,7 @@
 # ETL Pipeline( Python + MySQL)
 
 ## Project Overview
-![ETL Pipeline](images/etl_pipeline.png)
+![ETL Pipeline](https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
 
 
 This project demonstrates a real-world end-to-end ETL (Extract, Transform, Load) pipeline using Kaggle API, Python (Pandas), and MySQL. I extracted Walmart sales data from Kaggle, cleaned and transformed it using Python, and loaded the final dataset into a MySQL database for analysis.
@@ -50,7 +50,7 @@ I built this project to showcase my data engineering skills in API integration, 
    - I then Set up tables in MySQL using Python SQLAlchemy so as to automate table creation and data insertion.
    - I then Run initial SQL queries and confirmed that the data had been loaded and successfully accurately.
 
-
+![Loaded Data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.png)
 ## Project Structure
 
 ```plaintext
