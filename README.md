@@ -37,7 +37,7 @@ It showcases key data engineering skills including API integration, data cleanin
 
 ### 4. 🧹 Transform: Data Cleaning with Pandas
 - Performed data cleaning and transformation:
-  -Removed duplicates and handled missing values
+  - Removed duplicates and handled missing values
   - Converted currency-formatted strings to float
   - Renamed columns for consistency
 - Added new column:
