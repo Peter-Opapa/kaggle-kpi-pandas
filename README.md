@@ -74,7 +74,7 @@ This project showcases my data engineering skills in API integration, data clean
 ## 📌 Results & Proof
 
 - 💾 Data loaded successfully into MySQL
-- 🧾 Screenshot of loaded data available in `/images/mysql_output.png`
+- 🧾 Screenshot of loaded data available in [Loaded Image] (https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
 - 🔄 Full pipeline visualized in custom infographic
 
 ---
