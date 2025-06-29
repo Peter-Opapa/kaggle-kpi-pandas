@@ -21,7 +21,7 @@ I built this project to showcase my data engineering skills in API integration, 
    - I Placed the downloaded `kaggle.json` file in my local `.kaggle` folder.
 
 ### 3. Walmart Sales Data Download
-   - **Data Source**: Use the Kaggle API to download the Walmart sales datasets from Kaggle.
+   - **Data Source**: I Used the Kaggle API to download the Walmart sales datasets from Kaggle.
    - **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/najir0123/walmart-10k-sales-datasets)
 
 ### 4.  Required Libraries Installation and Loading Data
@@ -55,7 +55,6 @@ I built this project to showcase my data engineering skills in API integration, 
 
 ```plaintext
 |-- data/                     # Raw data and transformed data
-|-- sql_queries/              # SQL scripts for analysis and queries
 |-- notebooks/                # Jupyter notebooks for Python analysis
 |-- README.md                 # Project documentation
 |-- requirements.txt          # List of required Python libraries
@@ -65,7 +64,7 @@ I built this project to showcase my data engineering skills in API integration, 
 
 ## Future Enhancements
 
-I will Connect SQL data to Power BI or Tableau dashboards
+-I will Connect SQL data to Power BI or Tableau dashboards
 
 -I will Add scheduled automation via Airflow
 
