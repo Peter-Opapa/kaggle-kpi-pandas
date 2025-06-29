@@ -49,12 +49,12 @@ This project showcases my data engineering skills in API integration, data clean
 ### 5. 🗃️ Load: Push to MySQL
 - I Used SQLAlchemy and PyMySQL to connect:
   ```python
-  engine = create_engine('mysql+pymysql://root:Opapa%401292@localhost:3306/walmart_db')
+  engine_mysql = create_engine('mysql+pymysql://root:Opapa%401292@localhost:3306/walmart_db')
   df.to_sql('walmart_sales', con=engine_mysql, if_exists='replace', index=False)
   ```
 - I Verified that data was loaded with:
   ```sql
-  SELECT * FROM walmart_sales LIMIT 10;
+  SELECT * FROM walmart_sales;
   ```
 ![Loaded Data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
 ---
@@ -64,7 +64,7 @@ This project showcases my data engineering skills in API integration, data clean
 ```bash
 |-- data/                   # Raw + cleaned datasets
 |-- images/                 # ETL infographic + MySQL output screenshot
-|-- project.ipynb/              # ETL process in Jupyter
+|-- project.ipynb/          # ETL process in Jupyter
 |-- main.py                 # Optional script version of notebook
 |-- README.md               # Project documentation (this file)
 ```
@@ -75,16 +75,16 @@ This project showcases my data engineering skills in API integration, data clean
 
 - 💾 Data loaded successfully into MySQL
 - 🧾 Screenshot of loaded data available here (https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
-- 🔄 Full ETL Process in the Jupyter Notebook here (https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
-- 🔄 Full pipeline visualized in custom infographic here (https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
+- 🔄 ETL Process in the Jupyter Notebook here (https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
+- 🔄 Pipeline visualized in custom infographic here (https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
 
 ---
 
 ## 📈 Future Enhancements
 
-- Connect SQL data to Power BI or Tableau dashboards
-- Add scheduled automation via Airflow or Cron
-- Expand SQL analysis notebook with business-driven questions
+- I would Connect SQL data to Power BI or Tableau dashboards
+- I would Add scheduled automation via Airflow
+- I would Expand SQL analysis notebook with business-driven questions
 
 ---
 
@@ -97,8 +97,3 @@ This project shows my ability to:
 - Build a reproducible pipeline with clear documentation
 
 ---
-
-## 🔗 Contact & Showcase
-
-Feel free to check out the [GitHub Repo](#) or connect with me on [LinkedIn](#)  
-Open to feedback, contributions, or collaboration!
