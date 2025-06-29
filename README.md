@@ -4,9 +4,10 @@
 
 ![ETL Pipeline](https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png) 
 
-This project demonstrates a **real-world end-to-end ETL (Extract, Transform, Load) pipeline** using **Kaggle API, Python (Pandas), and MySQL**. I extracted Walmart sales data from Kaggle, cleaned and transformed it using Python, and loaded the final dataset into a MySQL database for analysis.
+This project demonstrates a real-world ETL (Extract, Transform, Load) pipeline using the Kaggle API, Python (Pandas), and MySQL.
+The goal was to extract Walmart sales data from Kaggle, clean and transform it using Python, and load the final dataset into a MySQL database for structured analysis.
 
-This project showcases my data engineering skills in API integration, data cleaning, SQL database interaction, and structured pipeline development.
+It showcases key data engineering skills including API integration, data cleaning, SQL database handling, and ETL pipeline development.
 
 ---
 
@@ -19,9 +20,9 @@ This project showcases my data engineering skills in API integration, data clean
 ---
 
 ### 2. 🔐 Kaggle API Setup
-- I Downloaded `kaggle.json` from my account on [Kaggle API Settings](https://www.kaggle.com).
-- I Placed the file in `~/.kaggle/`(the project root).
-- I Downloaded the dataset using:
+- Downloaded `kaggle.json` from my account on [Kaggle API Settings](https://www.kaggle.com).
+- Placed the file in `~/.kaggle/`(the project root).
+- Downloaded the dataset using:
   ```bash
   kaggle datasets download -d najir0123/walmart-10k-sales-datasets --unzip
   ```
@@ -30,15 +31,15 @@ This project showcases my data engineering skills in API integration, data clean
 
 ### 3. 📥 Extract: Geting Walmart Sales Data
 - Dataset Source: [Kaggle - Walmart Sales Dataset](https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets)
-- I Downloaded and unzipped using Kaggle CLI.
+- Retrieved and unzipped using Kaggle CLI.
 
 ---
 
-### 4. 🧹 Transform: Clean with Pandas
-- I Handled:
-  - Duplicates & missing values
-  - Currency format (`$`) and data type conversions
-  - Column renaming for consistency
+### 4. 🧹 Transform: Data Cleaning with Pandas
+- Performed data cleaning and transformation:
+  -Removed duplicates and handled missing values
+  - Converted currency-formatted strings to float
+  - Renamed columns for consistency
 - Added new column:
   ```python
   df['Total_Amount'] = df['unit_price'] * df['quantity']
@@ -47,12 +48,12 @@ This project showcases my data engineering skills in API integration, data clean
 ---
 
 ### 5. 🗃️ Load: Push to MySQL
-- I Used SQLAlchemy and PyMySQL to connect:
+- Used SQLAlchemy and PyMySQL to connect:
   ```python
   engine_mysql = create_engine('mysql+pymysql://root:Opapa%401292@localhost:3306/walmart_db')
   df.to_sql('walmart_sales', con=engine_mysql, if_exists='replace', index=False)
   ```
-- I Verified that data was loaded with:
+- Verified that data was loaded with:
   ```sql
   SELECT * FROM walmart_sales;
   ```
@@ -62,11 +63,11 @@ This project showcases my data engineering skills in API integration, data clean
 ## 📁 Project Structure
 
 ```bash
-|-- data/                   # Raw + cleaned datasets
+|-- data/                   # Raw and cleaned datasets
 |-- images/                 # ETL infographic + MySQL output screenshot
-|-- project.ipynb/          # ETL process in Jupyter
+|-- project.ipynb/          # Full ETL process in Jupyter
 |-- main.py                 # Optional script version of notebook
-|-- README.md               # Project documentation (this file)
+|-- README.md               # Project documentation
 ```
 
 ---
@@ -74,26 +75,26 @@ This project showcases my data engineering skills in API integration, data clean
 ## 📌 Results & Proof
 
 - 💾 Data loaded successfully into MySQL
-- 🧾 Screenshot of loaded data available here (https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
-- 🔄 ETL Process in the Jupyter Notebook here (https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
-- 🔄 Pipeline visualized in custom infographic here (https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
+- 🧾 [Screenshot of loaded data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
+- 🔄 [Full ETL Process Jupyter Notebook](https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
+- 🔄 [ETL Pipeline infographic](https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
 
 ---
 
 ## 📈 Future Enhancements
 
-- I would Connect SQL data to Power BI or Tableau dashboards
-- I would Add scheduled automation via Airflow
-- I would Expand SQL analysis notebook with business-driven questions
+- Integrate SQL data into Power BI for dashboarding
+- Automate the ETL Process Using Apache Airflow
+- Add deeper SQL business logic and analytical queries
 
 ---
 
 ## 💼 Why This Project Matters
 
 This project shows my ability to:
-- Integrate external APIs
-- Handle raw data programmatically
-- Work with relational databases
-- Build a reproducible pipeline with clear documentation
+- Work with APIs and external datasets
+- Perform real-world data transformation with Pandas
+- Load and interact with relational databases using Python
+- Build reproducible, clean, and documented data pipelines
 
 ---
