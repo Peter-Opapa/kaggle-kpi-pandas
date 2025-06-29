@@ -56,7 +56,7 @@ This project showcases my data engineering skills in API integration, data clean
   ```sql
   SELECT * FROM walmart_sales LIMIT 10;
   ```
-
+![Loaded Data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
 ---
 
 ## 📁 Project Structure
@@ -64,7 +64,7 @@ This project showcases my data engineering skills in API integration, data clean
 ```bash
 |-- data/                   # Raw + cleaned datasets
 |-- images/                 # ETL infographic + MySQL output screenshot
-|-- notebooks/              # ETL process in Jupyter
+|-- project.ipynb/              # ETL process in Jupyter
 |-- main.py                 # Optional script version of notebook
 |-- README.md               # Project documentation (this file)
 ```
@@ -74,8 +74,9 @@ This project showcases my data engineering skills in API integration, data clean
 ## 📌 Results & Proof
 
 - 💾 Data loaded successfully into MySQL
-- 🧾 Screenshot of loaded data available in [Loaded Image] (https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
-- 🔄 Full pipeline visualized in custom infographic
+- 🧾 Screenshot of loaded data available here (https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
+- 🔄 Full ETL Process in the Jupyter Notebook here (https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
+- 🔄 Full pipeline visualized in custom infographic here (https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png)
 
 ---
 
