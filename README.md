@@ -50,7 +50,7 @@ I built this project to showcase my data engineering skills in API integration, 
    - I then Set up tables in MySQL using Python SQLAlchemy so as to automate table creation and data insertion.
    - I then Run initial SQL queries and confirmed that the data had been loaded and successfully accurately.
 
-![Loaded Data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.png)
+![Loaded Data](https://github.com/Peter-Opapa/python_sql_project/blob/main/loaded_data.jpg)
 ## Project Structure
 
 ```plaintext
