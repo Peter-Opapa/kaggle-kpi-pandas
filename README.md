@@ -1,13 +1,12 @@
-# 🛒 Walmart Data ETL Pipeline (Python + MySQL)
+# 🛒ETL Pipeline (Python + MySQL)
 
 ## 🚀 Project Overview
 
-![ETL Pipeline](images/etl_pipeline.png)  
-*(Custom infographic showing Extract → Transform → Load flow)*
+![ETL Pipeline](https://github.com/Peter-Opapa/python_sql_project/blob/main/ETL_pipeline_layout.png) 
 
 This project demonstrates a **real-world end-to-end ETL (Extract, Transform, Load) pipeline** using **Kaggle API, Python (Pandas), and MySQL**. I extracted Walmart sales data from Kaggle, cleaned and transformed it using Python, and loaded the final dataset into a MySQL database for analysis.
 
-This project is ideal for showcasing data engineering skills including API integration, data cleaning, SQL database interaction, and structured pipeline development.
+This project showcases my data engineering skills in API integration, data cleaning, SQL database interaction, and structured pipeline development.
 
 ---
 
@@ -20,23 +19,23 @@ This project is ideal for showcasing data engineering skills including API integ
 ---
 
 ### 2. 🔐 Kaggle API Setup
-- Download `kaggle.json` from [Kaggle API Settings](https://www.kaggle.com/account).
-- Place it in `~/.kaggle/` or the project root.
-- Download dataset using:
+- I Downloaded `kaggle.json` from my account on [Kaggle API Settings](https://www.kaggle.com).
+- I Placed the file in `~/.kaggle/`(the project root).
+- I Downloaded the dataset using:
   ```bash
   kaggle datasets download -d najir0123/walmart-10k-sales-datasets --unzip
   ```
 
 ---
 
-### 3. 📥 Extract: Get Walmart Sales Data
+### 3. 📥 Extract: Geting Walmart Sales Data
 - Dataset Source: [Kaggle - Walmart Sales Dataset](https://www.kaggle.com/datasets/najir0123/walmart-10k-sales-datasets)
-- Downloaded and unzipped using Kaggle CLI.
+- I Downloaded and unzipped using Kaggle CLI.
 
 ---
 
 ### 4. 🧹 Transform: Clean with Pandas
-- Handled:
+- I Handled:
   - Duplicates & missing values
   - Currency format (`$`) and data type conversions
   - Column renaming for consistency
@@ -48,23 +47,15 @@ This project is ideal for showcasing data engineering skills including API integ
 ---
 
 ### 5. 🗃️ Load: Push to MySQL
-- Used SQLAlchemy and PyMySQL to connect:
+- I Used SQLAlchemy and PyMySQL to connect:
   ```python
-  engine = create_engine('mysql+pymysql://root:password@localhost:3306/walmart_db')
-  df.to_sql('walmart_sales', con=engine, if_exists='replace', index=False)
+  engine = create_engine('mysql+pymysql://root:Opapa%401292@localhost:3306/walmart_db')
+  df.to_sql('walmart_sales', con=engine_mysql, if_exists='replace', index=False)
   ```
-- Verified data was loaded with:
+- I Verified that data was loaded with:
   ```sql
-  SELECT * FROM walmart_sales LIMIT 5;
+  SELECT * FROM walmart_sales LIMIT 10;
   ```
-
----
-
-### 6. 📊 SQL Analysis (Future Work)
-- Once in MySQL, data can be queried using:
-  - Aggregations: `SUM`, `AVG`, `GROUP BY`
-  - Filtering by branch, product category, payment methods
-  - Time-based analysis (daily/monthly trends)
 
 ---
 
@@ -76,23 +67,6 @@ This project is ideal for showcasing data engineering skills including API integ
 |-- notebooks/              # ETL process in Jupyter
 |-- main.py                 # Optional script version of notebook
 |-- README.md               # Project documentation (this file)
-```
-
----
-
-## ✅ Requirements
-
-- Python 3.8+
-- MySQL installed locally (port 3306)
-- Python packages:
-  - `pandas`
-  - `sqlalchemy`
-  - `pymysql`
-  - `kaggle`
-
-Install all via:
-```bash
-pip install -r requirements.txt
 ```
 
 ---
