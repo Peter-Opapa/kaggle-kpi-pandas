@@ -9,6 +9,8 @@ The goal was to extract Walmart sales data from Kaggle, clean and transform it u
 
 It showcases key data engineering skills including API integration, data cleaning, SQL database handling, and ETL pipeline development.
 
+-[Full ETL Implementation](https://github.com/Peter-Opapa/python_sql_project/blob/main/project.ipynb)
+
 ---
 
 ## 🧱 Project Steps
