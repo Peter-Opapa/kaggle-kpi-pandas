@@ -100,3 +100,4 @@ This project shows my ability to:
 - Build reproducible, clean, and documented data pipelines
 
 ---
+**Author**: Peter Opapa © 2025
